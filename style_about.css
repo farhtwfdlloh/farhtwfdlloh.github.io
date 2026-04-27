@@ -65,9 +65,15 @@ body::-webkit-scrollbar {
   color: #e2e8f0;
   font-weight: normal;
   letter-spacing: 1px;
-  margin-top: -10px;
+  margin-top: 10px;
   font-style: normal;
-  white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.divider {
+  color: #94a3b8;
 }
 .editorial-text p {
   color: #94a3b8;
@@ -80,6 +86,32 @@ body::-webkit-scrollbar {
   width: 100%;
   object-fit: cover;
   border-radius: 4px;
+}
+
+/*! MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .editorial-title {
+    font-size: 2.5rem;
+  }
+  .editorial-subtitle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  .divider {
+    display: none;
+  }
+  .sub-point {
+    font-size: 1rem;
+    white-space: normal;
+  }
+  .timeline-content {
+    padding-left: 20px;
+  }
+  .skill-box {
+    padding: 1.5rem;
+  }
 }
 
 /*! TIMELINE */
