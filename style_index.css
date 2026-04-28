@@ -48,7 +48,7 @@ body::-webkit-scrollbar {
 /*! HERO CARD */
 .hero-blended-card {
   background-color: #0b0c10;
-  background-image: linear-gradient(to right, #0b0c10 40%, transparent 70%), url("fix_profile.png");
+  background-image: linear-gradient(to right, #0b0c10 40%, transparent 70%), url("foto/fix_profile.png");
   background-size: 115%;
   background-position: right center;
   background-repeat: no-repeat;
@@ -143,7 +143,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-image: linear-gradient(to bottom, rgba(11, 12, 16, 1) 0%, rgba(11, 12, 16, 1) 10%, rgba(11, 12, 16, 0) 50%), url("fix_profile_copy_2.PNG");
+    background-image: linear-gradient(to bottom, rgba(11, 12, 16, 1) 0%, rgba(11, 12, 16, 1) 10%, rgba(11, 12, 16, 0) 50%), url("foto/fix_profile_copy_2.PNG");
     background-position: bottom right;
     background-size: cover;
     border-radius: 16px;
