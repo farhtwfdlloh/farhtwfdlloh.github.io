@@ -144,8 +144,9 @@ body::-webkit-scrollbar {
     justify-content: flex-start;
     align-items: flex-start;
     background-image: linear-gradient(to bottom, rgba(11, 12, 16, 1) 0%, rgba(11, 12, 16, 1) 10%, rgba(11, 12, 16, 0) 50%), url("foto/fix_profile_copy_2.PNG");
-    background-position: bottom right;
-    background-size: cover;
+    background-position: bottom center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     border-radius: 16px;
   }
   .hero-content {
