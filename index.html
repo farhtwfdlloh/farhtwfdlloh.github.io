@@ -1,93 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Farhat Wafdulloh | Personal Website</title>
-        <link rel="icon" type="image/png" href="foto/llogo.png">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="style_index.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhat Wafdulloh | Personal Website</title>
+    <link rel="icon" type="image/png" href="foto/llogo.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
 
-        <nav
-            class="navbar navbar-expand-lg navbar-dark pt-4 pb-3 sticky-top bg-dark-custom shadow-sm">
-            <div class="container">
-                <a class="navbar-brand fw-normal" href="index.html">Farhat W</a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Farhat W</a>
+            
+            <div class="d-flex align-items-center d-lg-none gap-3">
+                <div class="nav-actions">
+                    <button class="btn-icon" id="theme-toggle-mobile" aria-label="Toggle Theme">
+                        <i id="theme-icon-mobile" class="bi bi-moon-fill"></i>
+                    </button>
+                    <div class="lang-switch" id="lang-toggle-mobile">ID</div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end"
-                    id="navbarNav">
-                    <ul class="navbar-nav gap-3">
-                        <li class="nav-item"><a
-                                class="nav-link active text-white"
-                                href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="cv.html">CV</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="container mt-4">
-            <div class="hero-blended-card">
-                <div class="hero-content">
-                    <h1 class="hero-title mb-4">Farhat Wafdulloh Al-Husna</h1>
-                    <p class="hero-desc">
-                        Information Systems student at Ma Chung University,
-                        focusing on System Analysis, IT Governance, and Data
-                        Management to build structured digital solutions.
-                    </p>
-                </div>
-                <a href="portfolio.html" class="btn btn-main hero-cta">Explore
-                    Portfolio &rarr;</a>
             </div>
 
-            <div class="row mt-5">
-                <div class="row info-stats mt-4">
-                    <div class="col-md-2 col-4">
-                        <p class="label">FOCUS</p>
-                        <p class="value">Information Systems</p>
-                    </div>
-                    <div class="col-md-3 col-4 border-start border-secondary">
-                        <p class="label">INTERESTS</p>
-                        <p class="value">IT Governance | System Analyst |
-                            Data</p>
-                    </div>
-                    <div class="col-md-2 col-4 border-start border-secondary">
-                        <p class="label">LOCATION</p>
-                        <p class="value">Malang, Indonesia</p>
-                    </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-4 align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" data-i18n="nav.home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-i18n="nav.about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html" data-i18n="nav.cv">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-flex align-items-center gap-3 ms-lg-2">
+                        <button class="btn-icon" id="theme-toggle" aria-label="Toggle Theme">
+                            <i id="theme-icon" class="bi bi-moon-fill"></i>
+                        </button>
+                        <div class="lang-switch" id="lang-toggle">ID</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <main class="container mt-4 mb-5 pb-5">
+        <div class="hero-blended-card reveal-blur">
+            <!-- Hero Image Background -->
+            <img src="foto/fix_profile.png" alt="Farhat Wafdulloh Profile" class="hero-img">
+            
+            <!-- Gradient Overlay -->
+            <div class="hero-overlay"></div>
+            
+            <!-- Content -->
+            <div class="hero-content">
+                <h1 class="hero-title reveal" style="transition-delay: 0.2s;" data-i18n="hero.title">Farhat Wafdulloh Al-Husna</h1>
+                <p class="hero-desc reveal" style="transition-delay: 0.4s;" data-i18n="hero.desc">
+                    Information Systems student at Ma Chung University, focusing on System Analysis, IT Governance, and Data Management to build structured digital solutions.
+                </p>
+                <div class="reveal" style="transition-delay: 0.6s;">
+                    <a href="portfolio.html" class="btn-main" data-i18n="hero.cta">Explore Portfolio &rarr;</a>
                 </div>
             </div>
         </div>
 
-        <footer class="mt-5 pb-5">
-            <div
-                class="container d-flex flex-column flex-md-row justify-content-between align-items-center border-top border-secondary pt-4 gap-3">
-                <span class="copyright text-muted text-center">&copy; 2026
-                    FARHAT WAFDULLOH.</span>
-                <div class="footer-links text-center">
-                    <a
-                        href="https://www.linkedin.com/in/farhat-wafdulloh-b37037335"
-                        class="text-muted text-decoration-none me-3">LINKEDIN</a>
-                    <a href="https://github.com/farhtwfdlloh"
-                        class="text-muted text-decoration-none">GITHUB</a>
+        <!-- INFO STATS -->
+        <div class="row mt-5 reveal" style="transition-delay: 0.8s;">
+            <div class="col-12">
+                <div class="info-stats-container">
+                    <div class="stat-item">
+                        <p class="stat-label" data-i18n="stat.focus.label">FOCUS</p>
+                        <p class="stat-value" data-i18n="stat.focus.value">Information Systems</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label" data-i18n="stat.interests.label">INTERESTS</p>
+                        <p class="stat-value" data-i18n="stat.interests.value">IT Governance | System Analyst | Data</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label" data-i18n="stat.location.label">LOCATION</p>
+                        <p class="stat-value" data-i18n="stat.location.value">Malang, Indonesia</p>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </main>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+    <!-- FOOTER -->
+    <footer class="container mt-5">
+        <div class="footer-container reveal">
+            <span class="copyright" data-i18n="footer.copy">&copy; 2026 FARHAT WAFDULLOH.</span>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/farhat-wafdulloh-b37037335" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+                <a href="https://github.com/farhtwfdlloh" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Handle Mobile Toggles explicitly in script since we have two pairs of buttons -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+            const langToggleMobile = document.getElementById('lang-toggle-mobile');
+            const themeToggleDesktop = document.getElementById('theme-toggle');
+            const langToggleDesktop = document.getElementById('lang-toggle');
+            
+            if(themeToggleMobile && themeToggleDesktop) {
+                themeToggleMobile.addEventListener('click', () => themeToggleDesktop.click());
+            }
+            if(langToggleMobile && langToggleDesktop) {
+                langToggleMobile.addEventListener('click', () => langToggleDesktop.click());
+                
+                // Sync display
+                setInterval(() => {
+                    langToggleMobile.textContent = langToggleDesktop.textContent;
+                    const iconMobile = document.getElementById('theme-icon-mobile');
+                    const iconDesktop = document.getElementById('theme-icon');
+                    if(iconMobile && iconDesktop) {
+                        iconMobile.className = iconDesktop.className;
+                    }
+                }, 100);
+            }
+        });
+    </script>
+</body>
 </html>
